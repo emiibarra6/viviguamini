@@ -21,6 +21,7 @@ class GoogleMaps extends StatefulWidget {
 }
 
 class _GoogleMapsState extends State<GoogleMaps> {
+  Position _currentPosition;
   LatLng toPoint;
   LatLng fromPoint;
 
@@ -130,6 +131,20 @@ class _GoogleMapsState extends State<GoogleMaps> {
 
     });
 
+  }
+
+  _getCurrentLocation3() {
+    final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
+
+    geolocator
+        .getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
+        .then((Position position) {
+      setState(() {
+        _currentPosition = position;
+      });
+    }).catchError((e) {
+      print(e);
+    });
   }
 
 
