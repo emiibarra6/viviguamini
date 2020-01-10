@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cedf89-9b94-4089-8dd8-4f9a8cd8cf6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/GoogleMaps/map.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/GoogleMaps/map.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -25,15 +25,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/GoogleMaps/map.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state relative-caret-position="272">
+              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
                 <element signature="e#304#693#0" />
                 <element signature="e#519#621#0" />
-                <element signature="e#1856#2197#0" />
-                <element signature="e#2252#2310#0" />
-                <element signature="e#2328#3290#0" />
+                <element signature="e#2281#2339#0" />
+                <element signature="e#2357#3319#0" />
               </folding>
             </state>
           </provider>
@@ -280,7 +279,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
@@ -632,15 +631,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/GoogleMaps/map.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="272">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#304#693#0" />
             <element signature="e#519#621#0" />
-            <element signature="e#1856#2197#0" />
-            <element signature="e#2252#2310#0" />
-            <element signature="e#2328#3290#0" />
+            <element signature="e#2281#2339#0" />
+            <element signature="e#2357#3319#0" />
           </folding>
         </state>
       </provider>

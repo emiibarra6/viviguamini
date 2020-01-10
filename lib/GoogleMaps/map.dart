@@ -26,8 +26,9 @@ class _GoogleMapsState extends State<GoogleMaps> {
   LatLng fromPoint;
 
   void initState() {
+    _getCurrentLocation3();
     toPoint = new LatLng(double.parse(widget.x), double.parse(widget.y));
-    fromPoint = LatLng(_getCurrentLocation(), _getCurrentLocation2());
+    fromPoint = LatLng(_currentPosition.latitude , _currentPosition.longitude);
     super.initState();
   }
 
@@ -43,7 +44,7 @@ class _GoogleMapsState extends State<GoogleMaps> {
             Widget child) {
           return GoogleMap(
             initialCameraPosition: CameraPosition(
-              target: widget.fromPoint,
+              target: fromPoint,
               zoom: 12,
             ),
             markers: _createMarkers(),
@@ -66,7 +67,7 @@ class _GoogleMapsState extends State<GoogleMaps> {
 
     tmp.add(Marker(
       markerId: MarkerId("FromPoint"),
-      position: widget.fromPoint,
+      position: fromPoint,
       infoWindow: InfoWindow(title: "estoy aca"),
     ));
 
@@ -90,13 +91,13 @@ class _GoogleMapsState extends State<GoogleMaps> {
     await _mapController.getVisibleRegion();
 
     print("buscando direcciones");
-    await api.findDirections(widget.fromPoint, toPoint);
+    await api.findDirections(fromPoint, toPoint);
 
     var left = min(
-        widget.fromPoint.latitude, toPoint.latitude); //SE CALCULA COORDENADAS.
-    var right = max(widget.fromPoint.latitude, toPoint.latitude);
-    var top = max(widget.fromPoint.longitude, toPoint.longitude);
-    var bottom = min(widget.fromPoint.longitude, toPoint.longitude);
+        fromPoint.latitude, toPoint.latitude); //SE CALCULA COORDENADAS.
+    var right = max(fromPoint.latitude, toPoint.latitude);
+    var top = max(fromPoint.longitude, toPoint.longitude);
+    var bottom = min(fromPoint.longitude, toPoint.longitude);
 
     api.currentRoute.first.points.forEach((point) {
       left = min(left, point.latitude);
