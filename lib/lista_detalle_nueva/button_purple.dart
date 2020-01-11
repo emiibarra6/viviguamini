@@ -1,19 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:viviguamini/GoogleMaps/map.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-class ButtonPurple extends StatelessWidget {
 
-  String x,y ;
+class ButtonPurple extends StatefulWidget {
+    String x,y ;
+    ButtonPurple(this.x , this.y);
+  _ButtonPurple createState() => _ButtonPurple();
+}
 
-  ButtonPurple(this.x , this.y);
-
+class _ButtonPurple extends State<ButtonPurple>{
+  Position _currentPosition;
+  LatLng l;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return InkWell(
       onTap: () {
-        Route route = MaterialPageRoute(builder: (context) => GoogleMaps.init(double.parse(x),double.parse(y)));
-        Navigator.push(context, route);
+        _getCurrentLocation();
+        if(_currentPosition != null){
+          l = LatLng(_currentPosition.latitude ,_currentPosition.longitude);
+          Route route = MaterialPageRoute(builder: (context) => GoogleMaps.init(double.parse(widget.x),double.parse(widget.y), l));
+          Navigator.push(context, route);
+        }
+
       },
       child: Container(
         margin: EdgeInsets.only(
@@ -55,5 +66,19 @@ class ButtonPurple extends StatelessWidget {
       ),
     );
   }
+
+
+  _getCurrentLocation() {
+    final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
+    geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.medium).then((Position position) {
+      setState(() {
+        _currentPosition = position;
+      });
+    }).catchError((e) {
+      print(e);
+    });
+  }
+
+
 
 }

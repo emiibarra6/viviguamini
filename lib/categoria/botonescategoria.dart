@@ -58,7 +58,6 @@ class Page extends StatelessWidget {
 
           // By default, show a loading spinner
           return Center(
-            //child: CircularProgressIndicator(),
             child: ColorLoader3(
               radius: 20.0,
               dotRadius: 5.0,

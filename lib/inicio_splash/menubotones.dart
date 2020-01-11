@@ -43,10 +43,7 @@ class menubotones extends StatelessWidget{
               builder: (context) => categoria()
             )
           );
-          //Navigator.push(
-          //context,
-          //MaterialPageRoute(builder: (context) => categoria()),
-        //);
+
         }
     );
 

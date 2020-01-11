@@ -8,12 +8,12 @@ import 'package:geolocator/geolocator.dart';
 
 class GoogleMaps extends StatefulWidget {
   final String x, y;
-  GoogleMaps(this.x, this.y);
-  final LatLng fromPoint = LatLng(-37.020125, -62.409399);
+  final LatLng l;
+  GoogleMaps(this.x, this.y, this.l);
 
-  static ChangeNotifierProvider init(double x, double y) =>  ChangeNotifierProvider<DirectionProvider>(
+  static ChangeNotifierProvider init(double x, double y, LatLng l ) =>  ChangeNotifierProvider<DirectionProvider>(
       create: (_) => new DirectionProvider(),
-      child: GoogleMaps(x.toString(),y.toString())
+      child: GoogleMaps(x.toString(),y.toString(),l)
   );
 
   @override
@@ -23,12 +23,10 @@ class GoogleMaps extends StatefulWidget {
 class _GoogleMapsState extends State<GoogleMaps> {
   Position _currentPosition;
   LatLng toPoint;
-  LatLng fromPoint;
+
 
   void initState() {
-    _getCurrentLocation3();
     toPoint = new LatLng(double.parse(widget.x), double.parse(widget.y));
-    fromPoint = LatLng(_currentPosition.latitude , _currentPosition.longitude);
     super.initState();
   }
 
@@ -44,7 +42,7 @@ class _GoogleMapsState extends State<GoogleMaps> {
             Widget child) {
           return GoogleMap(
             initialCameraPosition: CameraPosition(
-              target: fromPoint,
+              target: widget.l,
               zoom: 12,
             ),
             markers: _createMarkers(),
@@ -67,7 +65,7 @@ class _GoogleMapsState extends State<GoogleMaps> {
 
     tmp.add(Marker(
       markerId: MarkerId("FromPoint"),
-      position: fromPoint,
+      position: widget.l,
       infoWindow: InfoWindow(title: "estoy aca"),
     ));
 
@@ -91,13 +89,12 @@ class _GoogleMapsState extends State<GoogleMaps> {
     await _mapController.getVisibleRegion();
 
     print("buscando direcciones");
-    await api.findDirections(fromPoint, toPoint);
+    await api.findDirections(widget.l, toPoint);
 
-    var left = min(
-        fromPoint.latitude, toPoint.latitude); //SE CALCULA COORDENADAS.
-    var right = max(fromPoint.latitude, toPoint.latitude);
-    var top = max(fromPoint.longitude, toPoint.longitude);
-    var bottom = min(fromPoint.longitude, toPoint.longitude);
+    var left = min(widget.l.latitude, toPoint.latitude); //SE CALCULA COORDENADAS.
+    var right = max(widget.l.latitude, toPoint.latitude);
+    var top = max(widget.l.longitude, toPoint.longitude);
+    var bottom = min(widget.l.longitude, toPoint.longitude);
 
     api.currentRoute.first.points.forEach((point) {
       left = min(left, point.latitude);
@@ -114,39 +111,6 @@ class _GoogleMapsState extends State<GoogleMaps> {
     _mapController.animateCamera(cameraUpdate);
   }
 
-
-  double _getCurrentLocation() {
-    var geolocator = Geolocator();
-    var locationOptions = LocationOptions(accuracy: LocationAccuracy.high, distanceFilter: 10);
-    StreamSubscription<Position> positionStream = geolocator.getPositionStream(locationOptions).listen((Position position) {
-          return position.latitude;
-        });
-
-  }
-
-  double _getCurrentLocation2() {
-    var geolocator = Geolocator();
-    var locationOptions = LocationOptions(accuracy: LocationAccuracy.high, distanceFilter: 10);
-    StreamSubscription<Position> positionStream = geolocator.getPositionStream(locationOptions).listen((Position position) {
-      return position.longitude;
-
-    });
-
-  }
-
-  _getCurrentLocation3() {
-    final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
-
-    geolocator
-        .getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
-        .then((Position position) {
-      setState(() {
-        _currentPosition = position;
-      });
-    }).catchError((e) {
-      print(e);
-    });
-  }
 
 
 }
