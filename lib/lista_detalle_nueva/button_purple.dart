@@ -70,7 +70,7 @@ class _ButtonPurple extends State<ButtonPurple>{
 
   _getCurrentLocation() {
     final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
-    geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.medium).then((Position position) {
+    geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high).then((Position position) {
       setState(() {
         _currentPosition = position;
       });
