@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:viviguamini/negocio/ui/widgets/map.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
+import 'package:viviguamini/widgets/Theme.dart' as Tema;
 
 class ButtonPurple extends StatefulWidget {
     String x,y ;
@@ -38,8 +38,8 @@ class _ButtonPurple extends State<ButtonPurple>{
             borderRadius: BorderRadius.circular(30.0),
             gradient: LinearGradient(
                 colors: [
-                  Color(0xFF4268D3),
-                  Color(0xFF584CD1)
+                  Tema.Colors.appBarCeleste,
+                  Tema.Colors.borde1
                 ],
                 begin: FractionalOffset(0.2, 0.0),
                 end: FractionalOffset(1.0, 0.6),
