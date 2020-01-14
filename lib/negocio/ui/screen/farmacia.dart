@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viviguamini/entidades/Farmacia.dart';
+import 'package:viviguamini/negocio/model/Farmacia.dart';
 
 class farmacia extends StatelessWidget {
   @override

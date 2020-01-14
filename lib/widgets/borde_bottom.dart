@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wave/config.dart';
 import 'package:wave/wave.dart';
-import 'Theme.dart' as Tema;
+import '../widgets//Theme.dart' as Tema;
 
 
 class borde_bottom extends StatefulWidget {

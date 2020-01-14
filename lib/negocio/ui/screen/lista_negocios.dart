@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:viviguamini/Loader/ColorLoader3.dart';
-import 'package:viviguamini/entidades/Negocio.dart';
-import 'package:viviguamini/lista_detalle_nueva/home_trips.dart';
-import 'package:viviguamini/lista_negocio/pantalla_sindatos.dart';
+import 'package:viviguamini/widgets/Loader/ColorLoader3.dart';
+import 'package:viviguamini/negocio/model/Negocio.dart';
+import 'package:viviguamini/negocio/ui/screen/negocio_detalle.dart';
+import 'package:viviguamini/negocio/ui/screen/pantalla_sindatos.dart';
 
-class pantalla_lista extends StatelessWidget {
+class lista_negocios extends StatelessWidget {
   final String categoria;
-  pantalla_lista({Key key, this.categoria}) : super(key: key);
+  lista_negocios({Key key, this.categoria}) : super(key: key);
   final String title = "Listado";
   @override
   Widget build(BuildContext context) {

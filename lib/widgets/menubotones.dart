@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:viviguamini/inicio_splash/Theme.dart' as Tema;
-import 'package:viviguamini/categoria/categoria.dart';
-import 'package:viviguamini/emergencia/home_emergencia.dart';
-import 'package:viviguamini/Farmacia/farmacia.dart';
+import 'package:viviguamini/widgets//Theme.dart' as Tema;
+import 'package:viviguamini/negocio/ui/screen/lista_categorias_negocio.dart';
+import 'package:viviguamini/negocio/ui/widgets/home_emergencia.dart';
+import 'package:viviguamini/negocio/ui/screen/farmacia.dart';
 
 class menubotones extends StatelessWidget{
   @override

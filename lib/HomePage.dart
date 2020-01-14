@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'AppBarrvivicarhue.dart';
-import 'package:viviguamini/inicio_splash/menubotones.dart';
-import 'borde_bottom.dart';
+import 'widgets/AppBarrvivicarhue.dart';
+import 'package:viviguamini/widgets/menubotones.dart';
+import 'widgets/borde_bottom.dart';
 
 class HomePage extends StatelessWidget {
   @override

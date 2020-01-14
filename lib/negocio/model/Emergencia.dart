@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'direcciones.dart' as dire;
+import '../../widgets/direcciones.dart' as dire;
 
 class Emergencia {
   final String nombre;

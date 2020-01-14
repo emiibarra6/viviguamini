@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Theme.dart' as Tema;
+import '../widgets//Theme.dart' as Tema;
 
 class AppBarvivicarhue extends StatefulWidget {
   @override

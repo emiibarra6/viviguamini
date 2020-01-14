@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:viviguamini/emergencia/emergencia_detalle.dart';
-import 'package:viviguamini/inicio_splash/Theme.dart' as Tema;
+import 'package:viviguamini/negocio/ui/screen/emergencia_detalle.dart';
+import 'package:viviguamini/widgets/Theme.dart' as Tema;
 
 class home_emergencia extends StatelessWidget {
   Widget build(BuildContext context) {

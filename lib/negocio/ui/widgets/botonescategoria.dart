@@ -1,33 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:viviguamini/Loader/ColorLoader3.dart';
-import 'package:viviguamini/entidades/categoria.dart';
-import 'package:viviguamini/lista_negocio/pantalla_lista.dart';
+import 'package:viviguamini/widgets/Loader/ColorLoader3.dart';
+import 'package:viviguamini/negocio/model/categoria.dart';
+import 'package:viviguamini/negocio/ui/screen/lista_negocios.dart';
+
 
 class botonescategoria extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Page(
-        title: Text('Categorias'),
-        list: fetchPostC(),
-      ),
-    );
-  }
-
-
-}
-
-
-
-
-class Page extends StatelessWidget {
   @required
   final Text title; //Titulo a mostrar
   @required
   final Future<List<Categoria>> list;
-  Page({this.title, this.list});
+  botonescategoria({this.title, this.list});
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +87,7 @@ class CategoriaItem extends StatelessWidget {
       onTap: (){ // Esto se ejecutará mediante un callback y enviará a la página de negociossss.
         Navigator.of(context).push(
             MaterialPageRoute(
-                builder: (context) => pantalla_lista(categoria: cat.id)
+                builder: (context) => lista_negocios(categoria: cat.id)
             )
         );
 

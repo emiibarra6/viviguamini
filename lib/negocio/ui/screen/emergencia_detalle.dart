@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:viviguamini/entidades/Emergencia.dart';
+import 'package:viviguamini/negocio/model/Emergencia.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:viviguamini/inicio_splash/Theme.dart' as Tema;
 
 class emergencia_detalle extends StatelessWidget {
   @override

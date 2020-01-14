@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:viviguamini/GoogleMaps/map.dart';
+import 'package:viviguamini/negocio/ui/widgets/map.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 

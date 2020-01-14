@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:viviguamini/inicio_splash/Theme.dart' as Tema;
+import 'package:viviguamini/widgets/Theme.dart' as Tema;
 class GradientBack extends StatelessWidget {
 
 
-  String title = "Popular";
+  String title = "";
 
   GradientBack(this.title);
 

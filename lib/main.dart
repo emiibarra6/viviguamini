@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
-import 'package:viviguamini/inicio_splash/HomePage.dart';
-import 'package:viviguamini/inicio_splash/borde_bottom.dart';
-import 'package:viviguamini/inicio_splash/AppBarrvivicarhue.dart';
-import 'package:viviguamini/inicio_splash/Theme.dart' as Tema;
+import 'package:viviguamini/HomePage.dart';
+import 'package:viviguamini/widgets/borde_bottom.dart';
+import 'package:viviguamini/widgets/AppBarrvivicarhue.dart';
+import 'package:viviguamini/widgets//Theme.dart' as Tema;
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,

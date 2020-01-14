@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'description.dart';
-import 'header_appbar.dart';
-import 'review_list.dart';
-import 'package:viviguamini/entidades/Negocio.dart';
+import '../widgets/description.dart';
+import '../widgets/header_negocio.dart';
+import 'package:viviguamini/negocio/model/Negocio.dart';
 
 class HomeTrips extends StatefulWidget {
   final Negocio value;

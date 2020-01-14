@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'button_purple.dart';
-import 'package:viviguamini/inicio_splash/Theme.dart' as Tema;
-import 'package:viviguamini/icons.dart';
-import 'package:viviguamini/GoogleMaps/map.dart';
+import 'package:viviguamini/widgets/Theme.dart' as Tema;
+import 'package:viviguamini/widgets/icons.dart';
+
 class DescriptionPlace extends StatelessWidget {
 
   String descriptionPlace, celular, facebook, instagram, namePlace,x,y;
@@ -113,7 +113,6 @@ class DescriptionPlace extends StatelessWidget {
         title_stars,
         description,
         redes,
-       //map,
         ButtonPurple(x,y)
       ],
     );
