@@ -8,5 +8,4 @@
 
 - GoogleMaps: Accediendo a la ubicación del dispositivo movil, se va a dibujar la mejor ruta para llegar a destino, centrando la pantalla desde el punto de partida a la llegada. Evitando incomodidades de Zoom.
 
-[![](http://emiibarra6.com/DBremota/map)](http://emiibarra6.com/DBremota/map)
-
+<p align="center"> <img src="http://emiibarra6.com/DBremota/map" width="350"/> </p>
