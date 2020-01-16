@@ -1,16 +1,12 @@
-# viviguamini
+# Bienvenidos  a mi proyecto personal
 
-A new Flutter application.
+#### Es una app turista, donde se puede acceder a negocios, farmacias de turno, numeros de emergencias, eventos y lugares para visitar.
 
-## Getting Started
+- En él he trabajado con patrones de diseño, como **BLoC + clean**. Exponiendo las entidades, y aplicando **BLoC ** en cada una de ellas.
 
-This project is a starting point for a Flutter application.
+- Tenemos dos bases de datos, una de ella es **Firebase**. (desarrollando)
 
-A few resources to get you started if this is your first Flutter project:
+- GoogleMaps: Accediendo a la ubicación del dispositivo movil, se va a dibujar la mejor ruta para llegar a destino, centrando la pantalla desde el punto de partida a la llegada. Evitando incomodidades de Zoom.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[![](http://emiibarra6.com/DBremota/map)](http://emiibarra6.com/DBremota/map)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
