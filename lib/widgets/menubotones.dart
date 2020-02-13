@@ -3,10 +3,50 @@ import 'package:viviguamini/widgets//Theme.dart' as Tema;
 import 'package:viviguamini/negocio/ui/screen/lista_categorias_negocio.dart';
 import 'package:viviguamini/negocio/ui/widgets/home_emergencia.dart';
 import 'package:viviguamini/negocio/ui/screen/farmacia.dart';
+import 'package:viviguamini/lineatiempo/ui/screen/HomeLinea.dart';
 
 class menubotones extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+
+    final botonLineaTiempo = new InkWell(
+        child: new Container(
+          padding: const EdgeInsets.only(
+            top:3.7,
+            left: 7,
+          ),
+          decoration: new BoxDecoration(
+              border: Border.all(color: Tema.Colors.Blanco),
+              borderRadius: new BorderRadius.all(const Radius.circular(2.0)),
+              color: Tema.Colors.boton1,
+              boxShadow: [new BoxShadow(          //SOMBRA
+                color: Color(0xffA4A4A4),
+                offset: Offset(1.0, 1.0),
+                blurRadius: 2.0,
+              ),]
+          ),
+          width: MediaQuery.of(context).size.width - 30,
+          height: 40.0,
+          margin: EdgeInsets.only(top: 20.0),
+          child: Text(
+            'Guia Salomone y mas',
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Tema.Colors.Blanco,
+              fontSize: 25.0,
+            ),
+          ),
+
+        ),
+        onTap: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(
+                  builder: (context) => LineaTiempo()
+              )
+          );
+
+        }
+    );
 
     final botonCategoria = new InkWell(
         child: new Container(
@@ -160,7 +200,8 @@ class menubotones extends StatelessWidget{
             botonCategoria,
             botonEmergencia,
             farmaciaTurno,
-            botonEventos
+            botonEventos,
+            botonLineaTiempo
         ]
         ),
     );
