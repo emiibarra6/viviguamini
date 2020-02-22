@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:viviguamini/widgets/Theme.dart' as Tema;
+
 
 class LineaTiempo extends StatefulWidget {
   @override
@@ -8,12 +11,52 @@ class LineaTiempo extends StatefulWidget {
 }
 
 class _LineaTiempo extends State {
-  double _value = 5;
+
 
   onChanged(double value) {
     setState(() {
-      _value = value;
+
     });
+  }
+
+  void initState() {
+
+  }
+
+
+  Widget header(){
+    return Container(
+      padding: EdgeInsets.all(20),
+      color: Colors.blue,
+      height: MediaQuery.of(context).size.height / 2,
+      width: MediaQuery.of(context).size.width,
+      child: Text(
+        "Bienvenidos",
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 30,
+        ),
+      ),
+
+
+    );
+  }
+
+  Widget fondoImagen(){
+    return Container(
+      color: Colors.red,
+      height: MediaQuery.of(context).size.height / 2.2,
+      width: MediaQuery.of(context).size.width / 1.1,
+
+    );
+  }
+
+  Widget foto (){
+    return Container(
+      color: Colors.black,
+      height: MediaQuery.of(context).size.height / 4.2,
+      width: MediaQuery.of(context).size.width / 2.1,
+    );
   }
 
   @override
@@ -21,21 +64,32 @@ class _LineaTiempo extends State {
     return MaterialApp(
         title: 'Slider Tutorial',
         home: Scaffold(
-            appBar: AppBar(
-              title: Text('Slider Tutorial'),
-            ),
-            body: Column(
-              children: <Widget>[
-                Container(
-                  child: Slider(
-                    value: _value,
-                    onChanged: onChanged,
-                    min: 1,
-                    max: 15,
-                    divisions: 5,
+            body: Stack(
+                children: <Widget>[
+                  header(),
+                     Column(
+                       mainAxisAlignment: MainAxisAlignment.center,
+                       children: <Widget>[
+
+                         Center(
+                           child:fondoImagen(),
+                         ),
+
+                       ],
+                     ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      foto(),
+                    ],
+
                   ),
-                ),
-              ],
-            )));
+                ],
+
+            )
+
+            )
+    );
+
   }
 }
