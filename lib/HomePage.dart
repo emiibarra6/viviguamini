@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widgets/AppBarrvivicarhue.dart';
 import 'package:viviguamini/widgets/menubotones.dart';
-import 'widgets/borde_bottom.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -35,7 +34,6 @@ class _Home extends State<Home> {
         Container(
           height: 50.0,
           width: MediaQuery.of(context).size.width,
-          child: borde_bottom(),
           margin: EdgeInsets.only(top: 120.0),
         ),
 

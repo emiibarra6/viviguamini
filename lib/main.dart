@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
 import 'package:viviguamini/HomePage.dart';
-import 'package:viviguamini/widgets/borde_bottom.dart';
 import 'package:viviguamini/widgets/AppBarrvivicarhue.dart';
 import 'package:viviguamini/widgets//Theme.dart' as Tema;
 
@@ -89,7 +88,6 @@ class _HomePageBodyState extends State<HomePageBody> {
           Container(
             height: 50.0,
             width: MediaQuery.of(context).size.width,
-            child: borde_bottom(),
             margin: EdgeInsets.only(top: 390.0),
           ),
           Container(
