@@ -108,7 +108,7 @@ class NegocioItem extends StatelessWidget {
         // Esto se ejecutará mediante un callback y enviará a la página detalle
         Route route =
             MaterialPageRoute(builder: (context) => HomeTrips(value: negocio));
-        Navigator.push(context, route);
+          Navigator.push(context, route);
       },
     );
   }

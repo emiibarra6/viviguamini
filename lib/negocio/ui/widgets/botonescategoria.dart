@@ -85,11 +85,8 @@ class CategoriaItem extends StatelessWidget {
 
       ),
       onTap: (){ // Esto se ejecutará mediante un callback y enviará a la página de negociossss.
-        Navigator.of(context).push(
-            MaterialPageRoute(
-                builder: (context) => lista_negocios(categoria: cat.id)
-            )
-        );
+        Route route = MaterialPageRoute(builder: (context) => lista_negocios(categoria: cat.id,));
+        Navigator.push(context, route);
 
       },
     );

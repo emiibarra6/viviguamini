@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:viviguamini/lineatiempo/model/salamone.dart';
+import 'package:viviguamini/widgets/Loader/ColorLoader3.dart';
 
 class LineaTiempo extends StatefulWidget {
   @override
@@ -8,34 +10,106 @@ class LineaTiempo extends StatefulWidget {
 }
 
 class _LineaTiempo extends State {
-  double _value = 5;
-
-  onChanged(double value) {
-    setState(() {
-      _value = value;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Slider Tutorial',
-        home: Scaffold(
-            appBar: AppBar(
-              title: Text('Slider Tutorial'),
+      return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "Ruta Salamone",
+        home: PageSalamone(
+          list: fetchPost(),
+        ),
+      );
+    }
+  }
+
+class PageSalamone extends StatelessWidget{
+  final Future<List<Salamone>> list;
+  PageSalamone({ this.list});
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: FutureBuilder<List<Salamone>>(
+        future: list,
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return ListView.builder(
+                itemCount: snapshot.data.length,
+                itemBuilder: (context, index) {
+                  Salamone salamone = snapshot.data[index];
+                  return NegocioItem(salamone: salamone);
+                });
+          } else if (snapshot.hasError) {
+            //return pantalla_sindatos();
+            return Text("${snapshot.error}");
+          }
+
+          // By default, show a loading spinner
+          return Center(
+            child: ColorLoader3(
+              radius: 20.0,
+              dotRadius: 5.0,
             ),
-            body: Column(
-              children: <Widget>[
-                Container(
-                  child: Slider(
-                    value: _value,
-                    onChanged: onChanged,
-                    min: 1,
-                    max: 15,
-                    divisions: 5,
-                  ),
-                ),
-              ],
-            )));
+          );
+        },
+      ),
+    );
   }
 }
+
+class NegocioItem extends StatelessWidget {
+  @required
+  final Salamone salamone;
+  NegocioItem({this.salamone});
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ),
+        color: Colors.white,
+        child: Padding(
+          padding: EdgeInsets.all(5),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                child: Image.network(
+                  salamone.imageUrl1,
+                  fit: BoxFit.cover,
+                ),
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 4,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              Text(
+                salamone.nombre,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              ),
+
+            ],
+          ),
+        ),
+      ),
+      onTap: () {
+        // Esto se ejecutará mediante un callback y enviará a la página detalle
+        //Route route =
+        //MaterialPageRoute(builder: (context) => HomeTrips(value: negocio));
+        //Navigator.push(context, route);
+      },
+    );
+  }
+
+  Color getColor(String selector) {
+    if (selector == "Siempre abierto") {
+      return Colors.green;
+    } else {
+      return Colors.black;
+    }
+  }
+}
+
+
+
