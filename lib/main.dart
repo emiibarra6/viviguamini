@@ -80,7 +80,7 @@ class _HomePageBodyState extends State<HomePageBody> {
             child: Image.asset(
               'fotos/fondo.jpg',
               width: 600.0,
-              height: 240.0,
+              height: 280.0,
               fit: BoxFit.cover,
               alignment: Alignment.bottomCenter,
             ),
