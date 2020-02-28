@@ -9,7 +9,7 @@ class menubotones extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    final botonLineaTiempo = new InkWell(
+    final botonLineaTiempo = InkWell(
         child: new Container(
           padding: const EdgeInsets.only(
             top:3.7,

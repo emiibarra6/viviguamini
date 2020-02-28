@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:viviguamini/lineatiempo/model/salamone.dart';
 import 'package:viviguamini/widgets/Loader/ColorLoader3.dart';
+import 'package:viviguamini/lineatiempo/ui/screen/LineaDetalle.dart';
 
 class LineaTiempo extends StatefulWidget {
   @override
@@ -76,7 +77,7 @@ class NegocioItem extends StatelessWidget {
               Container(
                 child: Image.network(
                   salamone.imageUrl1,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height / 4,
@@ -94,10 +95,9 @@ class NegocioItem extends StatelessWidget {
         ),
       ),
       onTap: () {
-        // Esto se ejecutará mediante un callback y enviará a la página detalle
-        //Route route =
-        //MaterialPageRoute(builder: (context) => HomeTrips(value: negocio));
-        //Navigator.push(context, route);
+        Route route =
+        MaterialPageRoute(builder: (context) => LineaDetalle(value: salamone));
+        Navigator.push(context, route);
       },
     );
   }

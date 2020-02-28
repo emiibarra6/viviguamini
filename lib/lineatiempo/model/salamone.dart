@@ -5,6 +5,9 @@ import '../../widgets/direcciones.dart' as dire;
 class Salamone {
   final String nombre;
   final String description;
+  final String description2;
+  final String description3;
+  final String description4;
   final String imageUrl1;
   final String imageUrl2;
   final String imageUrl3;
@@ -16,13 +19,16 @@ class Salamone {
   final String anio3;
   final String anio4;
 
-  Salamone({this.nombre, this.description, this.imageUrl1, this.imageUrl2, this.imageUrl3,this.imageUrl4,this.x,this.y,this.anio1,this.anio2,this.anio3,this.anio4});
+  Salamone({this.description2, this.description3, this.description4, this.nombre, this.description, this.imageUrl1, this.imageUrl2, this.imageUrl3,this.imageUrl4,this.x,this.y,this.anio1,this.anio2,this.anio3,this.anio4});
 
   factory Salamone.fromJson(Map<String, dynamic> json) {
 
     return Salamone(
       nombre: json['nombre'],
       description: json['descripcion'],
+      description2: json['descripcion2'],
+      description3: json['descripcion3'],
+      description4: json['descripcion4'],
       imageUrl1: json['foto1'],
       imageUrl2: json['foto2'],
       imageUrl3: json['foto3'],
