@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'widgets/AppBarrvivicarhue.dart';
 import 'package:viviguamini/widgets/menubotones.dart';
-
+import 'package:viviguamini/widgets/Theme.dart' as Tema;
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,6 +38,25 @@ class _Home extends State<Home> {
         ),
 
       ],
-    ));
+    ),
+      bottomNavigationBar: Container(
+        height: 50,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: [
+                  Tema.Colors.appBarCeleste,
+                  Tema.Colors.borde1
+                ],
+                begin: FractionalOffset(0.2, 0.0),
+                end: FractionalOffset(1.0, 0.6),
+                stops: [0.0, 0.6],
+                tileMode: TileMode.clamp
+
+            )
+
+        ),
+
+      ),
+    );
   }
 }

@@ -27,9 +27,8 @@ class menubotones extends StatelessWidget{
           ),
           width: MediaQuery.of(context).size.width - 30,
           height: 40.0,
-          margin: EdgeInsets.only(top: 20.0),
           child: Text(
-            'Guia Salomone y mas',
+            'Guia Salamone y mas',
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Tema.Colors.Blanco,
@@ -66,7 +65,6 @@ class menubotones extends StatelessWidget{
         ),
           width: MediaQuery.of(context).size.width - 30,
         height: 40.0,
-        margin: EdgeInsets.only(top: 40.0),
           child: Text(
             'Categoria',
             textAlign: TextAlign.left,
@@ -106,7 +104,6 @@ class menubotones extends StatelessWidget{
         ),
         width: MediaQuery.of(context).size.width - 30,
         height: 40.0,
-        margin: EdgeInsets.only(top: 20.0),
         child: new Text(
           'Emergencia',
           textAlign: TextAlign.left,
@@ -141,7 +138,6 @@ class menubotones extends StatelessWidget{
         ),
         width: MediaQuery.of(context).size.width - 30,
         height: 40.0,
-        margin: EdgeInsets.only(top: 20.0),
           child: new Text(
             'Farmacia de turno',
             textAlign: TextAlign.left,
@@ -178,7 +174,6 @@ class menubotones extends StatelessWidget{
           ),
           width: MediaQuery.of(context).size.width - 30,
           height: 40.0,
-          margin: EdgeInsets.only(top: 20.0),
             child: new Text(
               'Eventos',
               textAlign: TextAlign.left,
@@ -197,10 +192,15 @@ class menubotones extends StatelessWidget{
     return new Center(
         child: Column(
         children: <Widget>[
+            SizedBox(height: 40),
             botonCategoria,
+          Divider(),
             botonEmergencia,
+          Divider(),
             farmaciaTurno,
+          Divider(),
             botonEventos,
+          Divider(),
             botonLineaTiempo
         ]
         ),
