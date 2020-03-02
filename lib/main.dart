@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
-import 'package:viviguamini/inicio_splash/HomePage.dart';
-import 'package:viviguamini/inicio_splash/borde_bottom.dart';
-import 'package:viviguamini/inicio_splash/AppBarrvivicarhue.dart';
-import 'package:viviguamini/inicio_splash/Theme.dart' as Tema;
+import 'package:viviguamini/HomePage.dart';
+import 'package:viviguamini/widgets/AppBarrvivicarhue.dart';
+import 'package:viviguamini/widgets//Theme.dart' as Tema;
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -81,7 +80,7 @@ class _HomePageBodyState extends State<HomePageBody> {
             child: Image.asset(
               'fotos/fondo.jpg',
               width: 600.0,
-              height: 240.0,
+              height: 280.0,
               fit: BoxFit.cover,
               alignment: Alignment.bottomCenter,
             ),
@@ -89,7 +88,6 @@ class _HomePageBodyState extends State<HomePageBody> {
           Container(
             height: 50.0,
             width: MediaQuery.of(context).size.width,
-            child: borde_bottom(),
             margin: EdgeInsets.only(top: 390.0),
           ),
           Container(
