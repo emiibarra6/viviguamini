@@ -16,17 +16,27 @@ class _HomeTrips extends State<HomeTrips> {
 
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Stack(
-      children: <Widget>[
-        ListView(
+    return MaterialApp(
+      home: Scaffold(
+        body: Stack(
           children: <Widget>[
-            DescriptionPlace(widget.value.title,  widget.value.description , "2923690749" , "facebook" , "instagram" , widget.value.x , widget.value.y),
-           // ReviewList()
+            ListView(
+              children: <Widget>[
+                DescriptionPlace(widget.value.title,  widget.value.description , "2923690749" , "facebook" , "instagram" , widget.value.x , widget.value.y),
+                // ReviewList()
+              ],
+            ),
+            HeaderAppBar(widget.value.imageUrl,widget.value.imageUrl2,widget.value.imageUrl3,widget.value.imageUrl4,widget.value.imageUrl5,widget.value.imageUrl6)
           ],
         ),
-        HeaderAppBar(widget.value.imageUrl,widget.value.imageUrl2,widget.value.imageUrl3,widget.value.imageUrl4,widget.value.imageUrl5,widget.value.imageUrl6)
-      ],
+      )
     );
+
+
+
+
+
   }
+
 
 }

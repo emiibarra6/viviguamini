@@ -18,7 +18,12 @@ class  CardImage extends StatelessWidget {
           left: 20.0
 
       ),
-      child: Image.network(pathImage,fit: BoxFit.cover),
+      child: Image.network(pathImage,
+          fit: BoxFit.cover,
+          loadingBuilder: (context , child, progress){
+            return progress == null ? child : LinearProgressIndicator();
+          } ,
+      ),
       decoration: BoxDecoration(
 
           borderRadius: BorderRadius.all(Radius.circular(10.0)),

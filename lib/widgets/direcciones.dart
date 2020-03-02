@@ -10,6 +10,8 @@ class direcciones {
 
   static const String ipCategoria = ("http://emiibarra6.com/DBremota/wsJSONConsultarCategoria.php");
 
+  static const String ipSalamone = ("http://emiibarra6.com/DBremota/wsJSONConsultarSalamone.php");
+
 
 }
 

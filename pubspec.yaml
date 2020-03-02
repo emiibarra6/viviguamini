@@ -35,6 +35,11 @@ dev_dependencies:
   google_maps_webservice: ^0.0.16
   provider: ^4.0.0
   geolocator: ^5.1.5
+  flutter_launcher_icons: "^0.7.4"
+flutter_icons:
+  image_path: "icon/icon.png"
+  Android: true
+  ios: true
 
 
 # For information on the generic Dart part of this file, see the
@@ -55,8 +60,9 @@ flutter:
 
   assets:
       - fotos/fondo.jpg
-      - fotos/adolfoalsina.png
-      - fotos/lagoepecuen.png
+      - fotos/matadero.jpg
+      - fotos/matadero2.jpg
+      - fotos/matadero3.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

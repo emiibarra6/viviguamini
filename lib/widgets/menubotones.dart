@@ -9,7 +9,7 @@ class menubotones extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    final botonLineaTiempo = new InkWell(
+    final botonLineaTiempo = InkWell(
         child: new Container(
           padding: const EdgeInsets.only(
             top:3.7,
@@ -25,11 +25,10 @@ class menubotones extends StatelessWidget{
                 blurRadius: 2.0,
               ),]
           ),
-          width: MediaQuery.of(context).size.width - 30,
+          width: MediaQuery.of(context).size.width  / 1.3,
           height: 40.0,
-          margin: EdgeInsets.only(top: 20.0),
           child: Text(
-            'Guia Salomone y mas',
+            'Guia Salamone y mas',
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Tema.Colors.Blanco,
@@ -64,9 +63,8 @@ class menubotones extends StatelessWidget{
               blurRadius: 2.0,
             ),]
         ),
-          width: MediaQuery.of(context).size.width - 30,
+          width: MediaQuery.of(context).size.width / 1.3,
         height: 40.0,
-        margin: EdgeInsets.only(top: 40.0),
           child: Text(
             'Categoria',
             textAlign: TextAlign.left,
@@ -78,10 +76,8 @@ class menubotones extends StatelessWidget{
 
       ),
         onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => categoria()
-            )
+          Navigator.of(context).pushNamed(
+            '/categoria'
           );
 
         }
@@ -104,9 +100,8 @@ class menubotones extends StatelessWidget{
               blurRadius: 2.0,
             ),]
         ),
-        width: MediaQuery.of(context).size.width - 30,
+        width: MediaQuery.of(context).size.width / 1.3,
         height: 40.0,
-        margin: EdgeInsets.only(top: 20.0),
         child: new Text(
           'Emergencia',
           textAlign: TextAlign.left,
@@ -139,9 +134,8 @@ class menubotones extends StatelessWidget{
               blurRadius: 2.0,
             ),]
         ),
-        width: MediaQuery.of(context).size.width - 30,
+        width: MediaQuery.of(context).size.width / 1.3,
         height: 40.0,
-        margin: EdgeInsets.only(top: 20.0),
           child: new Text(
             'Farmacia de turno',
             textAlign: TextAlign.left,
@@ -176,9 +170,8 @@ class menubotones extends StatelessWidget{
                 blurRadius: 2.0,
               ),]
           ),
-          width: MediaQuery.of(context).size.width - 30,
+          width: MediaQuery.of(context).size.width / 1.3,
           height: 40.0,
-          margin: EdgeInsets.only(top: 20.0),
             child: new Text(
               'Eventos',
               textAlign: TextAlign.left,
@@ -196,11 +189,17 @@ class menubotones extends StatelessWidget{
 
     return new Center(
         child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
+            SizedBox(height: 40),
             botonCategoria,
+          Divider(),
             botonEmergencia,
+          Divider(),
             farmaciaTurno,
+          Divider(),
             botonEventos,
+          Divider(),
             botonLineaTiempo
         ]
         ),

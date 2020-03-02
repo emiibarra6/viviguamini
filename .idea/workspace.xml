@@ -8,16 +8,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cedf89-9b94-4089-8dd8-4f9a8cd8cf6e" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/fotos/matadero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotos/matadero2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotos/matadero3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/route_generator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/HomePage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/negocio/ui/widgets/botonescategoria.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/negocio/ui/widgets/botonescategoria.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/menubotones.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/menubotones.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/negocio/ui/screen/lista_negocios.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/negocio/ui/screen/lista_negocios.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+>>>>>>> 3482873fba679ed92dc425c1b4f46e62a4c1cf49
     </list>
-    <ignored path="$PROJECT_DIR$/.dart_tool/" />
-    <ignored path="$PROJECT_DIR$/.idea/" />
-    <ignored path="$PROJECT_DIR$/.pub/" />
-    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +35,28 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/flutter/packages/flutter/lib/src/widgets/basic.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="1862" column="8" selection-start-line="1862" selection-start-column="8" selection-end-line="1862" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+=======
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/negocio/ui/screen/lista_negocios.dart">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,6 +76,7 @@
               <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
+>>>>>>> lineatiempo
               </folding>
             </state>
           </provider>
@@ -55,6 +84,7 @@
       </file>
     </leaf>
   </component>
+>>>>>>> 3482873fba679ed92dc425c1b4f46e62a4c1cf49
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -66,6 +96,11 @@
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="ProjectId" id="1YM2VRWo29hGzXYy79F4XOFFKWT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+=======
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -135,6 +170,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+=======
+>>>>>>> lineatiempo
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +190,9 @@
               <item name="viviguamini" type="b2602c69:ProjectViewProjectNode" />
               <item name="viviguamini" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="lineatiempo" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="negocio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -166,12 +208,17 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="negocio" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+>>>>>>> lineatiempo
             </path>
             <path>
               <item name="viviguamini" type="b2602c69:ProjectViewProjectNode" />
               <item name="viviguamini" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="lineatiempo" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="negocio" type="462c0819:PsiDirectoryNode" />
+>>>>>>> lineatiempo
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="screen" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -183,12 +230,14 @@
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
+>>>>>>> 3482873fba679ed92dc425c1b4f46e62a4c1cf49
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fotos" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -197,16 +246,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\fotos" />
       <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini\lib" />
       <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini\fonts" />
       <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini" />
+      <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\icon" />
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\widgets" />
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\negocio\ui\widgets" />
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\negocio\ui\screen" />
-      <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\lista_detalle" />
-      <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\user\model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -242,6 +292,20 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+<<<<<<< HEAD
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+=======
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -283,11 +347,15 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Flutter Performance" order="6" />
     </layout>
+>>>>>>> 3482873fba679ed92dc425c1b4f46e62a4c1cf49
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Haciendo el primer commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Haciendo el primer commit" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/lista_detalle_nueva/floating_action_button.dart" />
     <entry file="file://$PROJECT_DIR$/ios/Runner/AppDelegate.swift">
@@ -584,6 +652,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/lib/inicio_splash/HomePage.dart">
+=======
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -595,6 +666,7 @@
       </provider>
     </entry>
     <entry file="file://D:/flutter/bin/cache/pkg/sky_engine/lib/core/iterable.dart">
+>>>>>>> lineatiempo
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3264">
           <caret line="196" column="14" selection-start-line="196" selection-start-column="14" selection-end-line="196" selection-end-column="14" />
@@ -608,6 +680,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/lib/User/aa.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/User/ui/a.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/lista_detalle_nueva/button_purple.dart">
+=======
     <entry file="file://D:/flutter/packages/flutter/lib/src/widgets/list_wheel_scroll_view.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9435">
@@ -626,6 +703,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/negocio/ui/screen/lista_negocios.dart">
+>>>>>>> lineatiempo
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="43" column="24" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="24" />
@@ -635,7 +713,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/flutter/packages/flutter/lib/src/widgets/basic.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="1862" column="8" selection-start-line="1862" selection-start-column="8" selection-end-line="1862" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
+>>>>>>> 3482873fba679ed92dc425c1b4f46e62a4c1cf49
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
