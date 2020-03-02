@@ -110,15 +110,7 @@ class NegocioItem extends StatelessWidget {
           Navigator.push(context, route);
         },
       ),
-<<<<<<< HEAD
-      onTap: () {
-        // Esto se ejecutará mediante un callback y enviará a la página detalle
-        Route route =
-            MaterialPageRoute(builder: (context) => HomeTrips(value: negocio));
-          Navigator.push(context, route);
-      },
-=======
->>>>>>> 3482873fba679ed92dc425c1b4f46e62a4c1cf49
+
     );
   }
 
