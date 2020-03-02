@@ -60,6 +60,9 @@ flutter:
 
   assets:
       - fotos/fondo.jpg
+      - fotos/matadero.jpg
+      - fotos/matadero2.jpg
+      - fotos/matadero3.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

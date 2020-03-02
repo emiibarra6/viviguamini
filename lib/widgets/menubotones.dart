@@ -25,7 +25,7 @@ class menubotones extends StatelessWidget{
                 blurRadius: 2.0,
               ),]
           ),
-          width: MediaQuery.of(context).size.width - 30,
+          width: MediaQuery.of(context).size.width  / 1.3,
           height: 40.0,
           child: Text(
             'Guia Salamone y mas',
@@ -63,7 +63,7 @@ class menubotones extends StatelessWidget{
               blurRadius: 2.0,
             ),]
         ),
-          width: MediaQuery.of(context).size.width - 30,
+          width: MediaQuery.of(context).size.width / 1.3,
         height: 40.0,
           child: Text(
             'Categoria',
@@ -76,10 +76,8 @@ class menubotones extends StatelessWidget{
 
       ),
         onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => categoria()
-            )
+          Navigator.of(context).pushNamed(
+            '/categoria'
           );
 
         }
@@ -102,7 +100,7 @@ class menubotones extends StatelessWidget{
               blurRadius: 2.0,
             ),]
         ),
-        width: MediaQuery.of(context).size.width - 30,
+        width: MediaQuery.of(context).size.width / 1.3,
         height: 40.0,
         child: new Text(
           'Emergencia',
@@ -136,7 +134,7 @@ class menubotones extends StatelessWidget{
               blurRadius: 2.0,
             ),]
         ),
-        width: MediaQuery.of(context).size.width - 30,
+        width: MediaQuery.of(context).size.width / 1.3,
         height: 40.0,
           child: new Text(
             'Farmacia de turno',
@@ -172,7 +170,7 @@ class menubotones extends StatelessWidget{
                 blurRadius: 2.0,
               ),]
           ),
-          width: MediaQuery.of(context).size.width - 30,
+          width: MediaQuery.of(context).size.width / 1.3,
           height: 40.0,
             child: new Text(
               'Eventos',
@@ -191,6 +189,7 @@ class menubotones extends StatelessWidget{
 
     return new Center(
         child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
             SizedBox(height: 40),
             botonCategoria,

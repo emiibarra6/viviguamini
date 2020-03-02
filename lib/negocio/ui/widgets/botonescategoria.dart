@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:viviguamini/widgets/Loader/ColorLoader3.dart';
 import 'package:viviguamini/negocio/model/categoria.dart';
 import 'package:viviguamini/negocio/ui/screen/lista_negocios.dart';
-
+import 'package:viviguamini/widgets/route_generator.dart';
 
 class botonescategoria extends StatelessWidget {
   @required
@@ -84,9 +84,11 @@ class CategoriaItem extends StatelessWidget {
           ),
 
       ),
-      onTap: (){ // Esto se ejecutará mediante un callback y enviará a la página de negociossss.
-        Route route = MaterialPageRoute(builder: (context) => lista_negocios(categoria: cat.id,));
-        Navigator.push(context, route);
+      onTap: (){
+        Navigator.of(context).pushNamed(
+          '/negocios',
+          arguments: cat.id.toString(),
+        );
 
       },
     );

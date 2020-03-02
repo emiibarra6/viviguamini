@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cedf89-9b94-4089-8dd8-4f9a8cd8cf6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fotos/matadero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotos/matadero2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotos/matadero3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/route_generator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/HomePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/HomePage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/negocio/ui/widgets/botonescategoria.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/negocio/ui/widgets/botonescategoria.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widgets/menubotones.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/menubotones.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,24 +44,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fotos" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\fotos" />
+      <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini\lib" />
+      <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini\fonts" />
+      <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini" />
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\icon" />
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\widgets" />
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\negocio\ui\widgets" />
       <recent name="C:\Users\Emi\Documents\Proyectoflutter\viviguamini\lib\negocio\ui\screen" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini\lib" />
-      <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini\fonts" />
-      <recent name="C:\Users\Emi\Documents\Proyectos de flutter\viviguamini" />
     </key>
   </component>
   <component name="RunDashboard">
