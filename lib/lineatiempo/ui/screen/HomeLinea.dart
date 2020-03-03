@@ -33,12 +33,14 @@ class PageSalamone extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Obras de Salamone")),
       body: FutureBuilder<List<Salamone>>(
         future: list,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return ListView.builder(
                 itemCount: snapshot.data.length,
+                padding: EdgeInsets.all(5),
                 itemBuilder: (context, index) {
                   Salamone salamone = snapshot.data[index];
                   return NegocioItem(salamone: salamone);
@@ -74,6 +76,7 @@ class NegocioItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
         color: Colors.white,
+        margin: EdgeInsets.all(10),
         child: Padding(
           padding: EdgeInsets.all(5),
           child: Column(

@@ -76,11 +76,10 @@ class menubotones extends StatelessWidget{
 
       ),
         onTap: () {
-          Navigator.of(context).pushNamed(
-            '/categoria'
-          );
-
-        }
+          Navigator.push(context, MaterialPageRoute(builder: (_) {
+            return categoria();
+          }));
+        },
     );
 
 

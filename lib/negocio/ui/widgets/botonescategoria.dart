@@ -86,11 +86,9 @@ class CategoriaItem extends StatelessWidget {
 
       ),
       onTap: (){
-        Navigator.of(context).pushNamed(
-          '/negocios',
-          arguments: cat.id,
-        );
-
+        Navigator.push(context, MaterialPageRoute(builder: (_) {
+          return lista_negocios(categoria: cat.id);
+        }));
       },
     );
   }
