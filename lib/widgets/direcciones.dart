@@ -6,7 +6,7 @@ class direcciones {
 
   static const String ipEmergencia = ("https://vivicarhue.000webhostapp.com/DBRemota/wsJSONConsultarEmergencia.php?categoria=");
 
-  static const String ipFarmacia = ("https://vivicarhue.000webhostapp.com/DBRemota/wsJSONConsultarFarmacia.php");
+  static const String ipFarmacia = ("http://emiibarra6.com/DBremota/wsJSONConsultarFarmacia.php");
 
   static const String ipCategoria = ("http://emiibarra6.com/DBremota/wsJSONConsultarCategoria.php");
 

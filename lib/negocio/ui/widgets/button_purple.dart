@@ -5,8 +5,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:viviguamini/widgets/Theme.dart' as Tema;
 
 class ButtonPurple extends StatefulWidget {
-    String x,y ;
-    ButtonPurple(this.x , this.y);
+  String x,y ;
+  ButtonPurple(this.x , this.y);
   _ButtonPurple createState() => _ButtonPurple();
 }
 
@@ -17,17 +17,17 @@ class _ButtonPurple extends State<ButtonPurple>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Padding(
-    padding: const EdgeInsets.all(20.0),
-    child:InkWell(
-      onTap: () {
-        _getCurrentLocation();
-        if(_currentPosition != null){
-          l = LatLng(_currentPosition.latitude ,_currentPosition.longitude);
-          Route route = MaterialPageRoute(builder: (context) => GoogleMaps.init(double.parse(widget.x),double.parse(widget.y), l));
-          Navigator.push(context, route);
-        }
+      padding: const EdgeInsets.all(20.0),
+      child:InkWell(
+        onTap: () {
+          _getCurrentLocation();
+          if(_currentPosition != null){
+            l = LatLng(_currentPosition.latitude ,_currentPosition.longitude);
+            Route route = MaterialPageRoute(builder: (context) => GoogleMaps.init(double.parse(widget.x),double.parse(widget.y), l));
+            Navigator.push(context, route);
+          }
 
-      },
+        },
 
         child: Container(
           height: 50.0,
@@ -51,10 +51,10 @@ class _ButtonPurple extends State<ButtonPurple>{
             child: Text(
               "Navegar!!!",
               style: TextStyle(
-                  fontSize: 18.0,
-                  fontFamily: "Lato",
-                  color: Colors.white,
-                  decoration: TextDecoration.none,
+                fontSize: 18.0,
+                fontFamily: "Lato",
+                color: Colors.white,
+                decoration: TextDecoration.none,
               ),
 
             ),

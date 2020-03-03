@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:viviguamini/negocio/model/Farmacia.dart';
+import 'package:viviguamini/negocio/ui/widgets/description.dart';
+import 'package:viviguamini/negocio/ui/widgets/header_negocio.dart';
 
 class farmacia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(debugShowCheckedModeBanner: false,
       home: Page(
         list: fetchPost(),
       ),
@@ -55,40 +57,18 @@ class FarmaciaItem extends StatelessWidget {
   FarmaciaItem({this.farmacia});
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-
-      child: Card(
-        margin: EdgeInsets.only(
-          top: 320.0,
-        ),
-        child: Padding(
-          padding: EdgeInsets.all(5),
-
-          child: Column(
+    return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          ListView(
             children: <Widget>[
-              Row(
-                children: <Widget>[
-                  Image.network(
-                    farmacia.imageUrl,
-                    width: 300,
-                  ),
-                ],
-              ),
-              Text(farmacia.celular),
-              Text(
-                farmacia.title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
-                textAlign: TextAlign.center,
-              ),
+              DescriptionPlace(farmacia.title, farmacia.celular , "2923690749" , "facebook" , "instagram" , farmacia.x , farmacia.y),
+              // ReviewList()
             ],
           ),
-    ),
-        ),
-
-      onTap: () {
-        /*Route route = MaterialPageRoute(builder: (context) => lista_negocio_detalle(value: negocio));
-        Navigator.pushReplacement(context, route);*/
-      },
+          HeaderAppBar(farmacia.imageUrl,farmacia.imageUrl2,farmacia.imageUrl3,farmacia.imageUrl4,farmacia.imageUrl5,farmacia.imageUrl6)
+        ],
+      ),
     );
   }
 }

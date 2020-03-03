@@ -10,11 +10,12 @@ class LineaDetalle extends StatefulWidget {
   _LineaDetalle createState() => _LineaDetalle();
 }
 
+
 class _LineaDetalle extends State<LineaDetalle> {
   var anio = "";
   var sliderValue = 0.0;
   String foto = "";
-  String Descripcion = "asd";
+  String Descripcion = "Desliza para ver mas info :)";
 
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -132,5 +133,4 @@ class _LineaDetalle extends State<LineaDetalle> {
     );
   }
 
-  OnChanged() {}
 }

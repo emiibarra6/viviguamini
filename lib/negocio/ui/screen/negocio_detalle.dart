@@ -16,7 +16,7 @@ class _HomeTrips extends State<HomeTrips> {
 
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
+    return MaterialApp(debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Stack(
           children: <Widget>[

@@ -4,6 +4,7 @@ import 'package:viviguamini/negocio/model/categoria.dart';
 import 'package:viviguamini/negocio/ui/screen/lista_negocios.dart';
 import 'package:viviguamini/widgets/route_generator.dart';
 
+
 class botonescategoria extends StatelessWidget {
   @required
   final Text title; //Titulo a mostrar
@@ -85,11 +86,9 @@ class CategoriaItem extends StatelessWidget {
 
       ),
       onTap: (){
-        Navigator.of(context).pushNamed(
-          '/negocios',
-          arguments: cat.id.toString(),
-        );
-
+        Navigator.push(context, MaterialPageRoute(builder: (_) {
+          return lista_negocios(categoria: cat.id);
+        }));
       },
     );
   }

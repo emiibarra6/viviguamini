@@ -11,8 +11,7 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Bienvenidos!',
-        initialRoute: '/',
-        onGenerateRoute: RouteGenerator.generateRoute,
+        home: Home(),
         );
   }
 }
@@ -30,7 +29,7 @@ class _Home extends State<Home> {
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("fotos/matadero2.jpg"), // <-- BACKGROUND IMAGE
+              image: AssetImage("fotos/fondo2.jpg"), // <-- BACKGROUND IMAGE
               fit: BoxFit.cover,
             ),
           ),

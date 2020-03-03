@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -83,7 +84,7 @@ class _GoogleMapsState extends State<GoogleMaps> {
   }
 
   _centerView() async {
-    var api = Provider.of<DirectionProvider>(context);
+    var api = Provider.of<DirectionProvider>(context, listen: false);
 
     await _mapController.getVisibleRegion();
 
@@ -113,7 +114,3 @@ class _GoogleMapsState extends State<GoogleMaps> {
 
 
 }
-
-
-
-
