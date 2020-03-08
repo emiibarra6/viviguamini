@@ -147,7 +147,7 @@ class menubotones extends StatelessWidget{
       ),
         onTap: () { Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => farmacia()),
+          MaterialPageRoute(builder: (context) => FarmaciaPage()),
         ); }
     );
 

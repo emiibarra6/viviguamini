@@ -3,40 +3,27 @@ import 'package:viviguamini/negocio/model/Farmacia.dart';
 import 'package:viviguamini/negocio/ui/widgets/description.dart';
 import 'package:viviguamini/negocio/ui/widgets/header_negocio.dart';
 
-class farmacia extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,
-      home: Page(
-        list: fetchPost(),
-      ),
-    );
-  }
-}
 
-class Page extends StatelessWidget {
-  @required
-  final Future<List<Farmacia>> list;
-  Page({this.list});
-
+class FarmaciaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          // title: this.title,
+        // title: this.title,
       ),
       body: FutureBuilder<List<Farmacia>>(
-        future: list,
+        future: fetchPost(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return ListView.builder(
-                itemCount: snapshot.data.length,
-                itemBuilder: (context, index) {
-                  Farmacia farmacia = snapshot.data[index];
-                  return FarmaciaItem(
-                    farmacia: farmacia,
-                  );
-                });
+              itemCount: snapshot.data.length,
+              itemBuilder: (context, index) {
+                Farmacia farmacia = snapshot.data[index];
+                return FarmaciaItem(
+                  farmacia: farmacia,
+                );
+              },
+            );
           } else if (snapshot.hasError) {
             return Text("${snapshot.error}");
           }
@@ -52,23 +39,17 @@ class Page extends StatelessWidget {
 }
 
 class FarmaciaItem extends StatelessWidget {
-  @required
   final Farmacia farmacia;
-  FarmaciaItem({this.farmacia});
+  FarmaciaItem({@required this.farmacia});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          ListView(
-            children: <Widget>[
-              DescriptionPlace(farmacia.title, farmacia.celular , "2923690749" , "facebook" , "instagram" , farmacia.x , farmacia.y),
-              // ReviewList()
-            ],
-          ),
-          HeaderAppBar(farmacia.imageUrl,farmacia.imageUrl2,farmacia.imageUrl3,farmacia.imageUrl4,farmacia.imageUrl5,farmacia.imageUrl6)
-        ],
-      ),
+    return Stack(
+      children: <Widget>[
+        DescriptionPlace(farmacia.title, farmacia.celular, "2923690749",
+            "facebook", "instagram", farmacia.x, farmacia.y),
+        HeaderAppBar(farmacia.imageUrl, farmacia.imageUrl2, farmacia.imageUrl3,
+            farmacia.imageUrl4, farmacia.imageUrl5, farmacia.imageUrl6)
+      ],
     );
   }
 }
