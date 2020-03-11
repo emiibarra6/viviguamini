@@ -8,9 +8,6 @@ class FarmaciaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // title: this.title,
-      ),
       body: FutureBuilder<List<Farmacia>>(
         future: fetchPost(),
         builder: (context, snapshot) {

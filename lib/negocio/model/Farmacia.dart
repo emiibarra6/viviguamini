@@ -40,7 +40,6 @@ Future<List<Farmacia>> fetchPost() async {
   if (response.statusCode == 200) {
     var jsonObject = json.decode(response.body);
     List jsonList = jsonObject["farmacia"];
-    print(jsonList);
     return jsonList.map((i) => new Farmacia.fromJson(i)).toList();
   } else {
     throw Exception('Failed to load post');

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:viviguamini/widgets//Theme.dart' as Tema;
 import 'package:viviguamini/negocio/ui/screen/lista_categorias_negocio.dart';
-import 'package:viviguamini/negocio/ui/widgets/home_emergencia.dart';
+import 'package:viviguamini/negocio/ui/screen/home_emergencia.dart';
 import 'package:viviguamini/negocio/ui/screen/farmacia.dart';
 import 'package:viviguamini/lineatiempo/ui/screen/HomeLinea.dart';
 
