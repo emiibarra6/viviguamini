@@ -7,7 +7,7 @@ class home_emergencia extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          appBar: AppBar(),
+          appBar: AppBar(title: Text("Numeros de emergencia"),),
           body: ListView.builder(
             itemBuilder: (BuildContext context, int index) =>
                 EntryItem(data[index]),

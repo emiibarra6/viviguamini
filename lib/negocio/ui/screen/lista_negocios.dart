@@ -10,10 +10,8 @@ class lista_negocios extends StatelessWidget {
   final String title = "Listado";
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: this.title,
-      home: Page(
+    return Scaffold(
+      body: Page(
         title: Text(this.title),
         list: fetchPost(categoria),
       ),

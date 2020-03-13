@@ -5,9 +5,8 @@ import '../widgets/botonescategoria.dart';
 class categoria extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: botonescategoria(
+    return Scaffold(
+      body: botonescategoria(
         title: Text('Categorias'),
         list: fetchPostC(),
       ),

@@ -18,6 +18,9 @@ class _HomeTrips extends State<HomeTrips> {
     // TODO: implement build
     return MaterialApp(debugShowCheckedModeBanner: false,
       home: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){ Navigator.pop(context);},
+        ),
         body: Stack(
           children: <Widget>[
             ListView(
